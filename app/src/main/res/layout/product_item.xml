@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:padding="8dp"
+    android:layout_marginEnd="8dp"
+    android:foreground="?selectableItemBackground"
+    android:background="@drawable/shape_backgroun_slider_amzing"
+    android:layout_height="wrap_content">
+
+    <fathi.reza.been_tech.Custom.MyImageView
+        android:id="@+id/img_productItem_showItem"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        app:actualImageScaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:viewAspectRatio="0.80" />
+
+    <TextView
+        android:id="@+id/txt_productItem_title"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:minLines="2"
+        android:padding="2dp"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_productItem_showItem"
+        tools:text="گوشی سامسونگ مدل abc " />
+
+    <TextView
+        android:id="@+id/txt_productItem_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_discount"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:textColor="@color/white"
+        android:textSize="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_productItem_pprice"
+        app:layout_constraintEnd_toEndOf="@+id/txt_productItem_title"
+        app:layout_constraintTop_toTopOf="@+id/txt_productItem_pprice"
+        tools:text="30%" />
+
+    <TextView
+        android:id="@+id/txt_productItem_pprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/gray_700"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/txt_productItem_discount"
+        app:layout_constraintTop_toBottomOf="@+id/txt_productItem_title"
+        app:layout_goneMarginTop="3dp"
+        tools:text="250000000 تومان " />
+
+    <TextView
+        android:id="@+id/txt_productItm_greenPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_productItem_pprice"
+        tools:text="10000000 تومان " />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Details.Compare.CompareActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <include layout="@layout/usually_toolbar"/>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/gray_200"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="0.495"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ln_compare_second"
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.495"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_height="0dp">
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_compare_addProduct"
+                        android:layout_width="wrap_content"
+                        android:text="افزودن محصول"
+                        android:layout_gravity="center"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ln_compare_first"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <FrameLayout
+                        android:id="@+id/btn_compare_close"
+                        android:layout_width="24dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:background="@drawable/shape_compare_close"
+                        android:layout_height="24dp">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_baseline_close_24"
+                            android:layout_height="24dp"
+                            app:tint="@color/white" />
+                    </FrameLayout>
+                    <fathi.reza.been_tech.Custom.MyImageView
+                        android:id="@+id/img_compare_secondProduct"
+                        android:layout_width="150dp"
+                        app:viewAspectRatio="1"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4dp"
+                        app:actualImageScaleType="fitXY"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/txt_compare_secondProductTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="2dp"
+                        tools:text="گوشی موبایل سامسونگ مدل GALAXY M52 5G SM-M526BR/DS "
+                        android:textColor="@color/black"
+                        android:justificationMode="inter_word"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:minLines="2" />
+
+                    <TextView
+                        android:id="@+id/txt_compare_secondProductPrice"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:padding="8dp"
+                        android:text="5550000"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_weight="0.001"
+                android:background="@color/gray_200"
+                android:layout_height="match_parent"/>
+            <LinearLayout
+                android:layout_marginTop="28dp"
+                android:layout_weight="0.495"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <fathi.reza.been_tech.Custom.MyImageView
+                    android:layout_width="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:padding="8dp"
+                    android:id="@+id/img_compare_firstProduct"
+                    app:viewAspectRatio="1"
+                    app:actualImageScaleType="fitXY"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/txt_compare_firstProductTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    tools:text="گوشی موبایل سامسونگ مدل GALAXY M52 5G SM-M526BR/DS "
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:justificationMode="inter_word"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:minLines="2"/>
+                <TextView
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/txt_compare_firstProductPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:padding="8dp"
+                    android:text="5550000"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rv_compareActivity"
+        android:padding="16dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:layout_height="match_parent"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

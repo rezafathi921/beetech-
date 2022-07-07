@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingBottom="8dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <fathi.reza.been_tech.Custom.MyImageView
+        android:id="@+id/img_cart_showProduct"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:actualImageScaleType="fitXY"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txt_cartItem_showTitleProduct"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:minLines="2"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/img_cart_showProduct"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="گوشی موبایل سامسونگ مدل GALAXY M52 5G SM-M526BR/DS دو سیم‌ کارت ظرفیت 128 گیگابایت و رم 8 گیگابایت " />
+
+    <ImageView
+        android:id="@+id/img_cart_garantee"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:padding="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/img_cart_showProduct"
+        app:layout_constraintTop_toBottomOf="@+id/frame_cartItem_showColorAndname"
+        app:srcCompat="@drawable/ic_garantee_24" />
+
+    <ImageView
+        android:id="@+id/img_cart_company"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:padding="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/img_cart_showProduct"
+        app:layout_constraintTop_toBottomOf="@+id/img_cart_garantee"
+        app:srcCompat="@drawable/company" />
+
+    <ImageView
+        android:id="@+id/img_cart_existing"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:padding="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/img_cart_showProduct"
+        app:layout_constraintTop_toBottomOf="@+id/img_cart_company"
+        app:srcCompat="@drawable/ic_existing_24" />
+
+
+    <LinearLayout
+        android:id="@+id/frame_cartItem_showColorAndname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="right"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/img_cart_showProduct"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cartItem_showTitleProduct">
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txt_cartItem_garanteeText"
+        android:minLines="1"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        tools:text="گارانتی 18 ماهه دیجی کالا"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_cart_garantee"
+        app:layout_constraintEnd_toStartOf="@+id/img_cart_garantee"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_cart_garantee" />
+
+    <TextView
+
+        android:minLines="1"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:id="@+id/txt_cartItem_CompanyText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        tools:text="ایران ایسوس"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_cart_company"
+        app:layout_constraintEnd_toStartOf="@+id/img_cart_company"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_cart_company" />
+
+    <TextView
+        android:id="@+id/txt_cartItem_inStcock"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:minLines="1"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_cart_existing"
+        app:layout_constraintEnd_toStartOf="@+id/img_cart_existing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_cart_existing"
+        tools:text="موجود در انبار بی تچ و فروشنده " />
+
+    <LinearLayout
+        android:id="@+id/AllFrameRL_cartItem_takeNavigationSend"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/img_cart_existing"
+        app:layout_constraintStart_toStartOf="@+id/txt_cartItem_inStcock"
+        app:layout_constraintTop_toBottomOf="@+id/img_cart_existing">
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/shape_cartitem_minesandplus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_cart_showProduct">
+
+        <ImageView
+            android:id="@+id/img_countItem_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_add_24" />
+
+        <TextView
+            android:id="@+id/txt_carItem_count"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="4dp"
+            tools:text="1"
+            android:textColor="@color/red"
+            android:textSize="12sp"
+            app:fontFamily="@font/iransansbold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/img_countItem_add"
+            app:layout_constraintStart_toEndOf="@+id/img_countItem_remove"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_countItem_remove"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="4dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/trash_two" />
+
+        <ImageView
+            android:id="@+id/img_cartItem_mines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_remove_24" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_CartItem_LoadingCount"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_carItem_count"
+            app:layout_constraintEnd_toEndOf="@+id/txt_carItem_count"
+            app:layout_constraintStart_toStartOf="@+id/txt_carItem_count"
+            app:layout_constraintTop_toTopOf="@+id/txt_carItem_count" />
+
+        <TextView
+            android:id="@+id/txt_cartItem_MaxExist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="حداکثر"
+            android:visibility="invisible"
+            android:textSize="8dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_carItem_count"
+            app:layout_constraintStart_toStartOf="@+id/txt_carItem_count"
+            app:layout_constraintTop_toTopOf="@+id/txt_carItem_count" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txt_cartItem_showPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:padding="4dp"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_cartItem_showUnitCahsh"
+        app:layout_constraintTop_toBottomOf="@+id/AllFrameRL_cartItem_takeNavigationSend"
+        tools:text="20,000,000" />
+
+    <TextView
+        android:id="@+id/txt_cartItem_showUnitCahsh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:padding="4dp"
+        android:text="تومان"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_cartItem_showPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_cartItem_showPrice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

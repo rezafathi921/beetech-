@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="120dp"
+    android:background="@drawable/shape_catfragment_bck"
+    android:padding="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_height="wrap_content">
+
+    <fathi.reza.been_tech.Custom.MyImageView
+        android:id="@+id/img_catFragment_showSecondLevel"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txt_catFragment_secondlevelName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:minLines="1"
+        android:padding="2dp"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_catFragment_showSecondLevel"
+        tools:text="گوشی موبایل" />
+
+    <TextView
+        android:id="@+id/txt_catFragment_showCountProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:padding="2dp"
+        android:textColor="@color/greenIcon"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_catFragment_secondlevelName"
+        app:layout_constraintStart_toStartOf="@+id/txt_catFragment_secondlevelName"
+        app:layout_constraintTop_toBottomOf="@+id/txt_catFragment_secondlevelName"
+        tools:text="+5000 کالا" />
+</androidx.constraintlayout.widget.ConstraintLayout>

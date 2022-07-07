@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_round_home_24"
+        android:title="@string/navigation_home" />
+    <item
+        android:id="@+id/cat"
+        android:icon="@drawable/ic_round_category_24"
+        android:title="@string/navigation_cat" />
+    <item
+        android:id="@+id/shop"
+        android:icon="@drawable/ic_round_add_shopping_cart_24"
+        android:title="@string/navigation_shop" />
+    <item
+        android:id="@+id/beetech"
+        android:icon="@drawable/ic_round_person_outline_24"
+        android:title="@string/navigation_beetech" />
+
+</menu>

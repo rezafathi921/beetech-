@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Been-Tech</string>
+    <string name="navigation_home">خانه</string>
+    <string name="navigation_cat">دسته بندی</string>
+    <string name="navigation_shop">سبد خرید</string>
+    <string name="navigation_beetech">بی تچی شو</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="textSerchInHome">جستجو در</string>
+    <string name="button_def_item"> مشاهده همه</string>
+    <string name="property_toolbar_text">مشخصات فنی</string>
+    <string name="login_text">با ورود و یا ثبت نام در بی تچ شما شرایط و قوانین استفاده از سرویس های سایت بی تچ و قوانین حریم خصوصی آن را می پذیرید . </string>
+    <string name="login_text_enter">برای ورود یا ثبت نام به بی تچ شماره موبایل یا رمز ورود خود را وارد کنید .</string>
+    <string name="roule_pass">رمز عبور باید حداقل 8 کاراکتر باشد.\nرمز عبور باید شامل حداقل یک حرف بزرگ باشد.\nرمز عبور باید حداقل شامل یک عدد باشد.\nرمز عبور باید حداقل شامل یک کاراکتر خاص باشد.</string>
+    <string name="emptyState_signUp">لطفا وارد حساب کاربری خود شوید</string>
+    <string name="emptyState_emptyBasket">کالایی در سبد خرید شما یافت نشد</string>
+</resources>
